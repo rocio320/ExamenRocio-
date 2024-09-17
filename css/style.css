@@ -1,0 +1,319 @@
+:root{
+	--color-negro:#282d33;
+	--color-naranja: #f7b614;
+	--color-titulos:#2a2a32;
+	--color-contenido: #AAA;
+}
+body{
+	color:var(--color-contenido);
+}
+
+header{
+	position: relative;
+	background-color: #282932;
+	width: 100%;
+	top:0;
+	border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
+}
+footer{
+	background-color: #282932;
+	background-image: url(../img/footer-bg.png);
+	background-size: cover;
+	padding-top: 40px;
+	color: rgba(255, 255, 255, 0.55);
+	text-align: center;
+	font-size: 13px;
+	font-weight: 600;
+}
+footer p span{
+	color: #f7b614;
+}
+footer #copy{
+	padding: 20px 0;
+	margin-top: 5%;
+	color: #fff;
+	border-top: 1px dashed rgba(255, 255, 255, 0.15);
+}
+* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Sección de entrega a domicilio */
+.delivery-section {
+    display: flex;
+	background-image: url("../img/footer-bg.png");
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #282932;
+    color: white;
+}
+
+.text-content {
+    max-width: 500px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h2 span {
+    color: #ffcc00;
+}
+
+p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.btn {
+    padding: 12px 25px;
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.image-content img {
+    width: 500px;
+    height: auto;
+}
+
+/* Sección de productos populares */
+.popular-goods {
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.popular-goods h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.popular-goods span {
+    color: #ffcc00;
+}
+
+.category-menu {
+    margin-bottom: 30px;
+}
+
+.category-menu a {
+    margin: 0 15px;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.category-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Diseño de productos */
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h4 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product-card span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-card button:hover {
+    background-color: #ffdd33;
+}
+
+@media (max-width: 768px) {
+    .delivery-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-content img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+/* Sección de "Sit at Home" */
+.home-care-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+   background-color: #282932;
+    color: white;
+}
+
+/* Contenido de la imagen */
+.image-content img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contenido de texto */
+.text-content {
+    max-width: 500px;
+}
+
+.text-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.text-content h2 span {
+    color: #ffcc00;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* Características */
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    text-align: center;
+    width: 100px;
+}
+
+.feature-item img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.feature-item strong {
+    color: #ffcc00;
+}
+
+/* Botón */
+.btn {
+    padding: 12px 25px;
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ffdd33;
+}
+
+/* Adaptabilidad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .home-care-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-content img {
+        width: 50%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        margin-bottom: 20px;
+    }
+}
+footer{
+	background-color: #282932;
+	background-image: url(../img/footer-bg.png);
+	background-size: cover;
+	padding-top: 40px;
+	color: rgba(255, 255, 255, 0.55);
+	text-align: center;
+	font-size: 13px;
+	font-weight: 600;
+}
+footer p span{
+	color: #f7b614;
+}
+footer #copy{
+	padding: 20px 0;
+	margin-top: 5%;
+	color: #fff;
+	border-top: 1px dashed rgba(255, 255, 255, 0.15);
+}
